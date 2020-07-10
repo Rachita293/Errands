@@ -1,0 +1,81 @@
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Sign in|Sign up</title>
+
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'/>
+  <link type="text/css"  href="css/style.css" rel="stylesheet" media="all"/>
+
+</head>
+<body>
+  <div class="login-wrap">
+  <div class="login-html">
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+    <div class="login-form">
+      <form class="sign-in-htm" action="" method="POST">
+        <div class="group">
+          <label for="user" class="label">Username</label>
+          <input id="username" name="username" type="text" class="input" required>
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Password</label>
+          <input id="password" name="password" type="password" class="input" data-type="password" required>
+        </div>
+
+        <div class="group">
+          <input id="check" type="checkbox" class="check" checked>
+          <label for="check"><span class="icon"></span> Keep me Signed in</label>
+        </div>
+        <div class="group">
+          <input type="submit" class="button" name='sub' value="Sign In">
+        </div>
+        <div class="hr"></div>
+        <div class="foot-lnk">
+          <a href="#forgot">Not a Member? Please Sign Up !</a>
+        </div>
+      </form>
+      <form class="sign-up-htm" action="signup.php" method="POST">
+        <div class="group">
+          <label for="user" class="label">Username</label>
+          <input id="username" name="username" type="text" class="input" required>
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Password</label>
+          <input id="password" name="password" type="password" class="input" data-type="password"  minlength="8" required>
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Confirm Password</label>
+          <input id="pass" type="password" class="input" data-type="password">
+        </div>
+		   <div class="group">
+          <label for="pho" class="label">Phone no</label>
+          <input id="phoneno" name="phoneno" type="tel" class="input" data-type="number" pattern="[0-9]{10}" required>
+        </div>
+        <div class="group">
+          <label for="loc" class="label">Location</label>
+          <select id="location" name="location" class="round" required>
+            
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Vadodra">Vadodra</option>
+            <option value="Surat">Surat</option>
+          </select>
+        </div>
+        
+        <div class="group">
+          <input type="submit" class="button" value="Sign Up">
+        </div>
+       <!-- <div class="hr"></div>
+        <div class="foot-lnk">
+          <label for="tab-1">Already Member?</a>
+        </div>-->
+      </form>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
